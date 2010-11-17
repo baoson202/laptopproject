@@ -37,6 +37,9 @@ background:white;
 min-height:500px;
 float:left;
 }
+#thongtindangnhap{
+
+}
 #sitemap{
 color:orange;
 margin-left:300px;
@@ -93,7 +96,7 @@ width:195px;
 min-height:500px;
 padding-left:5px;
 }
-#rightContent h3{
+h3{
 background:#6189B7;
 color:white;
 -webkit-border-radius: 5px; /* Safari prototype */

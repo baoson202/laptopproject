@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 18, 2010 1:21:37 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="laptopdb" name="models.pojos.Sanpham" table="sanpham">
+    <id name="id" type="java.lang.Integer">
+      <column name="ID"/>
+      <generator class="identity"/>
+    </id>
+    <many-to-one class="models.pojos.Hang" fetch="select" name="hang">
+      <column name="Hang" not-null="true"/>
+    </many-to-one>
+    <many-to-one class="models.pojos.Loaisanpham" fetch="select" name="loaisanpham">
+      <column name="LoaiSanPham" not-null="true"/>
+    </many-to-one>
+    <property name="ten" type="string">
+      <column length="100" name="Ten" not-null="true"/>
+    </property>
+    <property name="soLuongTon" type="int">
+      <column name="SoLuongTon" not-null="true"/>
+    </property>
+    <property name="donGia" type="java.lang.Double">
+      <column name="DonGia" precision="22" scale="0"/>
+    </property>
+    <property name="hinhAnh" type="string">
+      <column length="100" name="HinhAnh" not-null="true"/>
+    </property>
+    <property name="chiTiet" type="string">
+      <column length="65535" name="ChiTiet" not-null="true"/>
+    </property>
+    <set inverse="true" name="giohangSanphams">
+      <key>
+        <column name="IDSanPham" not-null="true"/>
+      </key>
+      <one-to-many class="models.pojos.GiohangSanpham"/>
+    </set>
+  </class>
+</hibernate-mapping>

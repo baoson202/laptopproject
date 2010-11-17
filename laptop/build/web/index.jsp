@@ -25,7 +25,7 @@
                     <div id="sitemap">
                         <a href="index.jsp">Trang chủ</a>
                         <a href="dangnhap.jsp">Đăng nhập</a>
-                        <a href="pages/dangky.jsp">Đăng ký</a>
+                        <a href="dangky.jsp">Đăng ký</a>
                         <a href="laptop.jsp">Laptop</a>
                         <a href="phukien.jsp">phụ kiện</a>
                         <a href="quantri.jsp">Quản trị</a>
@@ -55,7 +55,9 @@ Máy tính xách tay, Laptop, Phụ kiện máy tính, phần mềm... "văn ph�
                    <div id="tinbai"></div>
 
                </div>
+
                <div id="rightContent">
+                   <br/>
                    <div id="thongtin">
                        <h3>Thông tin đăng nhập</h3>
                        <jsp:include page="pages/dangnhap.jsp"></jsp:include>

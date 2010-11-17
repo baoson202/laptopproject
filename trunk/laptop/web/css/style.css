@@ -1,0 +1,126 @@
+body{
+margin:0px auto;
+padding:0px;
+}
+
+#wrapper{
+width:1000px;
+min-height:1000px;
+background:lavender;
+}
+#header{
+width:900px;
+height:200px;
+background:#6189B7;
+margin:0px auto;
+margin-top:4px;
+}
+#title{
+color:orange;
+font-style:normal;
+font-weight:bold;
+padding-top:10px;
+width:280px;
+background:white;
+height:50px;
+
+}
+#content{
+width:900px;
+min-height:500px;
+margin:0px auto;
+margin-top:4px;
+}
+#leftContent{
+width:700px;
+background:white;
+min-height:500px;
+float:left;
+}
+#sitemap{
+color:orange;
+margin-left:300px;
+
+}
+#sitemap a{
+padding-left:5px;
+text-decoration:none;
+
+
+}
+#sitemap a:hover{
+color:orange;
+border:solid 1px blue;
+font-weight:bold;
+}
+#leftContent #danhMuc{
+float:left;
+width:200px;
+height:150px;
+background:white;
+}
+#danhMucLapTop{
+float:left;
+width:100px;
+heigh:100px;
+}
+#danhMucLapTop a,img{
+text-decoration:none;
+border-style:none;
+color:orange;
+}
+#danhMucLapTop a:hover{
+color:blue;
+}
+#danhMucPhuKien{
+float:right;
+width:100px;
+height:100px;
+}
+#danhMucPhuKien a,img{
+text-decoration:none;
+border-style:none;
+color:orange;
+}
+#danhMucPhuKien a:hover{
+color:blue;
+}
+
+#rightContent{
+float:right;
+background:white;
+width:195px;
+min-height:500px;
+padding-left:5px;
+}
+#rightContent h3{
+background:#6189B7;
+color:white;
+-webkit-border-radius: 5px; /* Safari prototype */
+-moz-border-radius: 5px; /* Gecko browsers */
+border-radius: 5px; /* dùng cho các trình duyÇt khác - */
+}
+#clear{
+clear:both;
+}
+#footer{
+width:900px;
+height:200px;
+background:#6189B7;
+margin:0px auto;
+margin-top:4px;
+color:white;
+}
+#footer #text{
+width:400px;
+height:100px;
+background:orange;
+position:relative;
+left:200px;
+top:50px;
+font-style:normal;
+font-weight:bold;
+-webkit-border-radius: 10px; /* Safari prototype */
+-moz-border-radius: 10px; /* Gecko browsers */
+border-radius: 10px; /* dùng cho các trình duyÇt khác - */
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 18, 2010 1:21:37 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="laptopdb" name="models.pojos.GiohangSanpham" table="giohang_sanpham">
+    <composite-id class="models.pojos.GiohangSanphamId" name="id">
+      <key-property name="idgioHang" type="int">
+        <column name="IDGioHang"/>
+      </key-property>
+      <key-property name="idsanPham" type="int">
+        <column name="IDSanPham"/>
+      </key-property>
+    </composite-id>
+    <many-to-one class="models.pojos.Giohang" fetch="select" insert="false" name="giohang" update="false">
+      <column name="IDGioHang" not-null="true"/>
+    </many-to-one>
+    <many-to-one class="models.pojos.Sanpham" fetch="select" insert="false" name="sanpham" update="false">
+      <column name="IDSanPham" not-null="true"/>
+    </many-to-one>
+    <property name="donGia" type="double">
+      <column name="DonGia" not-null="true" precision="22" scale="0"/>
+    </property>
+    <property name="soLuong" type="int">
+      <column name="SoLuong" not-null="true"/>
+    </property>
+    <property name="thanhTien" type="double">
+      <column name="ThanhTien" not-null="true" precision="22" scale="0"/>
+    </property>
+  </class>
+</hibernate-mapping>

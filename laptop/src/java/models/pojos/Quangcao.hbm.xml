@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 18, 2010 1:21:37 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="laptopdb" name="models.pojos.Quangcao" table="quangcao">
+    <id name="id" type="int">
+      <column name="ID"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="nguoiDaiDien" type="string">
+      <column length="100" name="NguoiDaiDien" not-null="true"/>
+    </property>
+    <property name="diaChi" type="string">
+      <column length="100" name="DiaChi" not-null="true"/>
+    </property>
+    <property name="dienThoai" type="string">
+      <column length="15" name="DienThoai" not-null="true"/>
+    </property>
+    <property name="trangThai" type="int">
+      <column name="TrangThai" not-null="true"/>
+    </property>
+    <property name="hinhAnh" type="string">
+      <column length="200" name="HinhAnh" not-null="true"/>
+    </property>
+    <property name="thoiHan" type="timestamp">
+      <column length="19" name="ThoiHan" not-null="true"/>
+    </property>
+    <property name="soTien" type="double">
+      <column name="SoTien" not-null="true" precision="22" scale="0"/>
+    </property>
+  </class>
+</hibernate-mapping>

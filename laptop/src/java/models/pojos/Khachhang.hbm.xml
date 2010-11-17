@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 18, 2010 1:21:37 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="laptopdb" name="models.pojos.Khachhang" table="khachhang">
+    <id name="id" type="java.lang.Integer">
+      <column name="ID"/>
+      <generator class="identity"/>
+    </id>
+    <many-to-one class="models.pojos.User" fetch="select" name="user">
+      <column length="100" name="UserName" not-null="true"/>
+    </many-to-one>
+    <property name="ten" type="string">
+      <column length="100" name="Ten" not-null="true"/>
+    </property>
+    <property name="diaChi" type="string">
+      <column length="100" name="DiaChi"/>
+    </property>
+    <property name="email" type="string">
+      <column length="100" name="Email" not-null="true"/>
+    </property>
+    <set inverse="true" name="dondathangs">
+      <key>
+        <column name="IDKhachHang" not-null="true"/>
+      </key>
+      <one-to-many class="models.pojos.Dondathang"/>
+    </set>
+  </class>
+</hibernate-mapping>

@@ -62,9 +62,6 @@ public class DAOKhachHang {
             CallableStatement cs = connect.prepareCall("{call sp_KiemTraDangNhap('"
                     + username +"','" + password
                     + "')}");
-            
-            
-
             ResultSet rs = cs.executeQuery();
             if(rs.next()){
                 kh = new Khachhang();

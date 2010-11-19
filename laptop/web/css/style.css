@@ -127,3 +127,7 @@ font-weight:bold;
 -moz-border-radius: 10px; /* Gecko browsers */
 border-radius: 10px; /* dùng cho các trình duyÇt khác - */
 }
+#thongbao{
+color:red;
+font-weight:bold;
+}

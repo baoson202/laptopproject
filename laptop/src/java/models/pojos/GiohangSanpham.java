@@ -1,5 +1,5 @@
 package models.pojos;
-// Generated Nov 18, 2010 1:21:37 AM by Hibernate Tools 3.2.1.GA
+// Generated Nov 18, 2010 1:20:56 PM by Hibernate Tools 3.2.1.GA
 
 
 
@@ -9,9 +9,10 @@ package models.pojos;
 public class GiohangSanpham  implements java.io.Serializable {
 
 
-     private GiohangSanphamId id;
-     private Giohang giohang;
-     private Sanpham sanpham;
+     
+     private int idgioHang;
+     private int idsanPham;
+
      private double donGia;
      private int soLuong;
      private double thanhTien;
@@ -19,35 +20,43 @@ public class GiohangSanpham  implements java.io.Serializable {
     public GiohangSanpham() {
     }
 
-    public GiohangSanpham(GiohangSanphamId id, Giohang giohang, Sanpham sanpham, double donGia, int soLuong, double thanhTien) {
-       this.id = id;
-       this.giohang = giohang;
-       this.sanpham = sanpham;
+    public GiohangSanpham( int giohang, int sanpham, double donGia, int soLuong, double thanhTien) {
+       
+       this.idgioHang = giohang;
+       this.idsanPham = sanpham;
        this.donGia = donGia;
        this.soLuong = soLuong;
        this.thanhTien = thanhTien;
     }
+    public int getIdgioHang() {
+        return this.idgioHang;
+    }
+
+    public void setIdgioHang(int idgioHang) {
+        this.idgioHang = idgioHang;
+    }
+    public int getIdsanPham() {
+        return this.idsanPham;
+    }
+
+    public void setIdsanPham(int idsanPham) {
+        this.idsanPham = idsanPham;
+    }
    
-    public GiohangSanphamId getId() {
-        return this.id;
+    
+    public int getGiohang() {
+        return this.idgioHang;
     }
     
-    public void setId(GiohangSanphamId id) {
-        this.id = id;
+    public void setGiohang(int giohang) {
+        this.idgioHang = giohang;
     }
-    public Giohang getGiohang() {
-        return this.giohang;
-    }
-    
-    public void setGiohang(Giohang giohang) {
-        this.giohang = giohang;
-    }
-    public Sanpham getSanpham() {
-        return this.sanpham;
+    public int getSanpham() {
+        return this.idsanPham;
     }
     
-    public void setSanpham(Sanpham sanpham) {
-        this.sanpham = sanpham;
+    public void setSanpham(int sanpham) {
+        this.idsanPham = sanpham;
     }
     public double getDonGia() {
         return this.donGia;

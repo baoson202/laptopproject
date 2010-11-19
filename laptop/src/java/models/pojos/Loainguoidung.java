@@ -13,20 +13,17 @@ public class Loainguoidung  implements java.io.Serializable {
 
      private Integer id;
      private String ten;
-     private Set users = new HashSet(0);
+     
 
     public Loainguoidung() {
     }
 
 	
-    public Loainguoidung(String ten) {
+    public Loainguoidung(Integer id,String ten) {
+        this.id = id;
         this.ten = ten;
     }
-    public Loainguoidung(String ten, Set users) {
-       this.ten = ten;
-       this.users = users;
-    }
-   
+    
     public Integer getId() {
         return this.id;
     }
@@ -41,14 +38,7 @@ public class Loainguoidung  implements java.io.Serializable {
     public void setTen(String ten) {
         this.ten = ten;
     }
-    public Set getUsers() {
-        return this.users;
-    }
     
-    public void setUsers(Set users) {
-        this.users = users;
-    }
-
 
 
 

@@ -14,8 +14,7 @@ public class Loaisanpham  implements java.io.Serializable {
      private Integer id;
      private String ten;
      private String moTa;
-     private Set sanphams = new HashSet(0);
-
+     
     public Loaisanpham() {
     }
 
@@ -23,10 +22,11 @@ public class Loaisanpham  implements java.io.Serializable {
     public Loaisanpham(String ten) {
         this.ten = ten;
     }
-    public Loaisanpham(String ten, String moTa, Set sanphams) {
+    public Loaisanpham(Integer id, String ten, String moTa) {
+        this.id = id;
        this.ten = ten;
        this.moTa = moTa;
-       this.sanphams = sanphams;
+       
     }
    
     public Integer getId() {
@@ -50,14 +50,7 @@ public class Loaisanpham  implements java.io.Serializable {
     public void setMoTa(String moTa) {
         this.moTa = moTa;
     }
-    public Set getSanphams() {
-        return this.sanphams;
-    }
-    
-    public void setSanphams(Set sanphams) {
-        this.sanphams = sanphams;
-    }
-
+   
 
 
 

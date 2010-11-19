@@ -13,19 +13,20 @@ public class Sanpham  implements java.io.Serializable {
 
      private Integer id;
      private Hang hang;
-     private Loaisanpham loaisanpham;
+     private Integer loaisanpham;
      private String ten;
      private int soLuongTon;
      private Double donGia;
      private String hinhAnh;
      private String chiTiet;
-     private Set giohangSanphams = new HashSet(0);
+     
 
     public Sanpham() {
     }
 
 	
-    public Sanpham(Hang hang, Loaisanpham loaisanpham, String ten, int soLuongTon, String hinhAnh, String chiTiet) {
+    public Sanpham(Integer id, Hang hang, Integer loaisanpham, String ten, int soLuongTon, String hinhAnh, String chiTiet) {
+        this.id=  id;
         this.hang = hang;
         this.loaisanpham = loaisanpham;
         this.ten = ten;
@@ -33,7 +34,7 @@ public class Sanpham  implements java.io.Serializable {
         this.hinhAnh = hinhAnh;
         this.chiTiet = chiTiet;
     }
-    public Sanpham(Hang hang, Loaisanpham loaisanpham, String ten, int soLuongTon, Double donGia, String hinhAnh, String chiTiet, Set giohangSanphams) {
+    public Sanpham(Hang hang, Integer loaisanpham, String ten, int soLuongTon, Double donGia, String hinhAnh, String chiTiet, Set giohangSanphams) {
        this.hang = hang;
        this.loaisanpham = loaisanpham;
        this.ten = ten;
@@ -41,7 +42,7 @@ public class Sanpham  implements java.io.Serializable {
        this.donGia = donGia;
        this.hinhAnh = hinhAnh;
        this.chiTiet = chiTiet;
-       this.giohangSanphams = giohangSanphams;
+    
     }
    
     public Integer getId() {
@@ -57,13 +58,6 @@ public class Sanpham  implements java.io.Serializable {
     
     public void setHang(Hang hang) {
         this.hang = hang;
-    }
-    public Loaisanpham getLoaisanpham() {
-        return this.loaisanpham;
-    }
-    
-    public void setLoaisanpham(Loaisanpham loaisanpham) {
-        this.loaisanpham = loaisanpham;
     }
     public String getTen() {
         return this.ten;
@@ -100,16 +94,7 @@ public class Sanpham  implements java.io.Serializable {
     public void setChiTiet(String chiTiet) {
         this.chiTiet = chiTiet;
     }
-    public Set getGiohangSanphams() {
-        return this.giohangSanphams;
-    }
     
-    public void setGiohangSanphams(Set giohangSanphams) {
-        this.giohangSanphams = giohangSanphams;
-    }
-
-
-
 
 }
 

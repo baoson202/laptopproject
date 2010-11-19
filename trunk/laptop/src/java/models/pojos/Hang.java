@@ -2,7 +2,7 @@ package models.pojos;
 // Generated Nov 18, 2010 1:20:56 PM by Hibernate Tools 3.2.1.GA
 
 
-import java.util.HashSet;
+
 import java.util.Set;
 
 /**
@@ -13,7 +13,7 @@ public class Hang  implements java.io.Serializable {
 
      private Integer id;
      private String ten;
-     private Set sanphams = new HashSet(0);
+     
 
     public Hang() {
     }
@@ -22,9 +22,10 @@ public class Hang  implements java.io.Serializable {
     public Hang(String ten) {
         this.ten = ten;
     }
-    public Hang(String ten, Set sanphams) {
+    public Hang(Integer id, String ten) {
+        this.id= id;
        this.ten = ten;
-       this.sanphams = sanphams;
+       
     }
    
     public Integer getId() {
@@ -41,13 +42,7 @@ public class Hang  implements java.io.Serializable {
     public void setTen(String ten) {
         this.ten = ten;
     }
-    public Set getSanphams() {
-        return this.sanphams;
-    }
-    
-    public void setSanphams(Set sanphams) {
-        this.sanphams = sanphams;
-    }
+   
 
 
 

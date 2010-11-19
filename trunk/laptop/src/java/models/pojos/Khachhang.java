@@ -1,5 +1,5 @@
 package models.pojos;
-// Generated Nov 18, 2010 1:21:37 AM by Hibernate Tools 3.2.1.GA
+// Generated Nov 18, 2010 1:20:56 PM by Hibernate Tools 3.2.1.GA
 
 
 import java.util.HashSet;
@@ -11,44 +11,33 @@ import java.util.Set;
 public class Khachhang  implements java.io.Serializable {
 
 
-     private Integer id;
-     private User user;
+     
      private String ten;
      private String diaChi;
      private String email;
-     private Set dondathangs = new HashSet(0);
+     private String username;
+     private Integer loainguoidung;
+     private String password;
 
     public Khachhang() {
     }
 
 	
-    public Khachhang(User user, String ten, String email) {
-        this.user = user;
+    public Khachhang(String ten, String email) {
         this.ten = ten;
         this.email = email;
     }
-    public Khachhang(User user, String ten, String diaChi, String email, Set dondathangs) {
-       this.user = user;
+    public Khachhang(String username,String password,String ten, String diaChi, String email, Integer loainguoidung) {
+        
        this.ten = ten;
        this.diaChi = diaChi;
        this.email = email;
-       this.dondathangs = dondathangs;
+       this.username = username;
+       this.loainguoidung = loainguoidung;
+       this.password = password;
     }
    
-    public Integer getId() {
-        return this.id;
-    }
     
-    public void setId(Integer id) {
-        this.id = id;
-    }
-    public User getUser() {
-        return this.user;
-    }
-    
-    public void setUser(User user) {
-        this.user = user;
-    }
     public String getTen() {
         return this.ten;
     }
@@ -70,12 +59,48 @@ public class Khachhang  implements java.io.Serializable {
     public void setEmail(String email) {
         this.email = email;
     }
-    public Set getDondathangs() {
-        return this.dondathangs;
-    }
     
-    public void setDondathangs(Set dondathangs) {
-        this.dondathangs = dondathangs;
+    
+    /**
+     * @return the username
+     */
+    public String getUsername() {
+        return username;
+    }
+
+    /**
+     * @param username the username to set
+     */
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    /**
+     * @return the loainguoidung
+     */
+    public int getLoainguoidung() {
+        return loainguoidung;
+    }
+
+    /**
+     * @return the password
+     */
+    public String getPassword() {
+        return password;
+    }
+
+    /**
+     * @param loainguoidung the loainguoidung to set
+     */
+    public void setLoainguoidung(Integer loainguoidung) {
+        this.loainguoidung = loainguoidung;
+    }
+
+    /**
+     * @param password the password to set
+     */
+    public void setPassword(String password) {
+        this.password = password;
     }
 
 

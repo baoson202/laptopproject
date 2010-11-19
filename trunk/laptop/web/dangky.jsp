@@ -12,26 +12,24 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link type="text/css" href="css/style.css" rel="stylesheet" />
+        <script type="text/javascript"
+        src="js/javascript.js"></script>
+
         <title>JSP Page</title>
     </head>
     <body>
         <div id="wrapper">
             <div id="header">
-                <%@include file="pages/header.jsp" %>
+                <%@include file="includes/header.jsp" %>
             </div>
             <div id="content">
                 
                <div id="leftContent">
                     <div id="sitemap">
-                        <a href="index.jsp">Trang chủ</a>
-                        <a href="dangnhap.jsp">Đăng nhập</a>
-                        <a href="dangky.jsp">Đăng ký</a>
-                        <a href="laptop.jsp">Laptop</a>
-                        <a href="phukien.jsp">phụ kiện</a>
-                        <a href="quantri.jsp">Quản trị</a>
+                        <%@include  file="includes/sitemap.jsp" %>
                     </div>
                    <div id="maincontent">
-                       <%@include  file="pages/dangky.jsp" %>
+                       <%@include  file="includes/dangky.jsp" %>
                    </div>
 
                </div>
@@ -39,7 +37,7 @@
                    <br/>
                    <div id="thongtin">
 
-                       <%@include  file="pages/dangnhap.jsp" %>
+                       <%@include  file="includes/dangnhap.jsp" %>
                    </div>
                    <div id="thongtin">
                        <h3>Thông tin đặt hàng</h3>
@@ -65,7 +63,7 @@
             </div>
 
             <div id="footer">
-                <%@include  file="pages/footer.jsp" %>
+                <%@include  file="includes/footer.jsp" %>
             </div>
 
         </div>

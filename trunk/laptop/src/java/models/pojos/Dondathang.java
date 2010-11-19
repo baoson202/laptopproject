@@ -1,5 +1,5 @@
 package models.pojos;
-// Generated Nov 18, 2010 1:21:37 AM by Hibernate Tools 3.2.1.GA
+// Generated Nov 18, 2010 1:20:56 PM by Hibernate Tools 3.2.1.GA
 
 
 
@@ -9,43 +9,52 @@ package models.pojos;
 public class Dondathang  implements java.io.Serializable {
 
 
-     private DondathangId id;
-     private Giohang giohang;
-     private Khachhang khachhang;
+     
+     private int idkhachHang;
+     private int idgioHang;
+
      private double tongTien;
      private int trangThai;
 
     public Dondathang() {
     }
 
-    public Dondathang(DondathangId id, Giohang giohang, Khachhang khachhang, double tongTien, int trangThai) {
-       this.id = id;
-       this.giohang = giohang;
-       this.khachhang = khachhang;
+    public Dondathang( int giohang, int khachhang, double tongTien, int trangThai) {
+       
+       this.idgioHang = giohang;
+       this.idkhachHang = khachhang;
        this.tongTien = tongTien;
        this.trangThai = trangThai;
     }
+    public int getIdkhachHang() {
+        return this.idkhachHang;
+    }
+
+    public void setIdkhachHang(int idkhachHang) {
+        this.idkhachHang = idkhachHang;
+    }
+    public int getIdgioHang() {
+        return this.idgioHang;
+    }
+
+    public void setIdgioHang(int idgioHang) {
+        this.idgioHang = idgioHang;
+    }
    
-    public DondathangId getId() {
-        return this.id;
+    
+    public int getGiohang() {
+        return this.idgioHang;
     }
     
-    public void setId(DondathangId id) {
-        this.id = id;
+    public void setGiohang(int giohang) {
+        this.idgioHang = giohang;
     }
-    public Giohang getGiohang() {
-        return this.giohang;
-    }
-    
-    public void setGiohang(Giohang giohang) {
-        this.giohang = giohang;
-    }
-    public Khachhang getKhachhang() {
-        return this.khachhang;
+    public int getKhachhang() {
+        return this.idkhachHang;
     }
     
-    public void setKhachhang(Khachhang khachhang) {
-        this.khachhang = khachhang;
+    public void setKhachhang(int khachhang) {
+        this.idkhachHang = khachhang;
     }
     public double getTongTien() {
         return this.tongTien;

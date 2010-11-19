@@ -12,23 +12,20 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link type="text/css" href="css/style.css" rel="stylesheet" />
+        <script type="text/javascript"
+        src="js/javascript.js"></script>
         <title>JSP Page</title>
     </head>
     <body>
         <div id="wrapper">
             <div id="header">
-                <%@include file="pages/header.jsp" %>
+                <%@include file="includes/header.jsp" %>
             </div>
             <div id="content">
                 
                <div id="leftContent">
                     <div id="sitemap">
-                        <a href="index.jsp">Trang chủ</a>
-                        <a href="dangnhap.jsp">Đăng nhập</a>
-                        <a href="dangky.jsp">Đăng ký</a>
-                        <a href="laptop.jsp">Laptop</a>
-                        <a href="phukien.jsp">phụ kiện</a>
-                        <a href="quantri.jsp">Quản trị</a>
+                        <%@include  file="includes/sitemap.jsp" %>
                     </div>
                    <div id="danhMuc">
                        
@@ -59,8 +56,8 @@ Máy tính xách tay, Laptop, Phụ kiện máy tính, phần mềm... "văn ph�
                <div id="rightContent">
                    <br/>
                    <div id="thongtin">
-                       <h3>Thông tin đăng nhập</h3>
-                       <jsp:include page="pages/dangnhap.jsp"></jsp:include>
+                       
+                       <jsp:include page="includes/dangnhap.jsp"></jsp:include>
                    </div>
                    <div id="thongtin">
                        <h3>Thông tin đặt hàng</h3>
@@ -86,7 +83,7 @@ Máy tính xách tay, Laptop, Phụ kiện máy tính, phần mềm... "văn ph�
             </div>
 
             <div id="footer">
-                <%@include  file="pages/footer.jsp" %>
+                <%@include  file="includes/footer.jsp" %>
             </div>
 
         </div>

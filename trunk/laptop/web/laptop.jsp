@@ -17,7 +17,7 @@
     <body>
         <div id="wrapper">
             <div id="header">
-                <%@include file="pages/header.jsp" %>
+                <%@include file="includes/header.jsp" %>
             </div>
             <div id="content">
                 
@@ -31,7 +31,7 @@
                         <a href="quantri.jsp">Quản trị</a>
                     </div>
                    <div id="maincontent">
-                       <%@include  file="pages/laptop.jsp" %>
+                       <%@include  file="includes/laptop.jsp" %>
                    </div>
 
                </div>
@@ -39,7 +39,7 @@
                    <br/>
                    <div id="thongtin">
 
-                       <%@include  file="pages/dangnhap.jsp" %>
+                       <%@include  file="includes/dangnhap.jsp" %>
                    </div>
                    <div id="thongtin">
                        <h3>Thông tin đặt hàng</h3>
@@ -65,7 +65,7 @@
             </div>
 
             <div id="footer">
-                <%@include  file="pages/footer.jsp" %>
+                <%@include  file="includes/footer.jsp" %>
             </div>
 
         </div>
